@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=your_user
+User=root
 WorkingDirectory=/opt/ping-monitor
 ExecStart=/usr/bin/python3 /opt/ping-monitor/ping_monitor.py
 Restart=always
