@@ -1,6 +1,5 @@
 sudo mkdir -p /opt/ping-monitor
 sudo cp ping_monitor.py config.yaml hosts.yaml /opt/ping-monitor/
-sudo chown -R your_user:your_user /opt/ping-monitor
 
 sudo systemctl daemon-reload
 sudo systemctl enable ping-monitor
