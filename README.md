@@ -1,2 +1,1 @@
-# ping-monitor
-simply ping monitor with tg notification
+AI generted

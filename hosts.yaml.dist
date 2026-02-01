@@ -1,0 +1,12 @@
+hosts:
+  - name: "Шлюз"
+    ip: "192.168.1.1"
+    description: "Основной шлюз сети"
+  
+  - name: "Сервер БД"
+    ip: "10.0.0.5"
+    description: "PostgreSQL кластер"
+  
+  - name: "Google DNS"
+    ip: "8.8.8.8"
+    description: "Публичный DNS для проверки интернета"

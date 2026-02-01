@@ -1,0 +1,13 @@
+telegram:
+  bot_token: "YOUR_BOT_TOKEN"  # Получить у @BotFather
+  chat_id: "YOUR_CHAT_ID"      # Узнать у @userinfobot
+
+monitoring:
+  check_interval: 30           # Интервал проверки в секундах
+  failure_threshold: 3         # Количество неудачных проверок перед уведомлением
+  recovery_threshold: 2        # Количество успешных проверок перед уведомлением о восстановлении
+  timeout: 2                   # Таймаут пинга в секундах
+
+logging:
+  log_file: "/var/log/ping-monitor.log"
+  log_level: "INFO"

@@ -1,0 +1,18 @@
+[Unit]
+Description=Ping Monitor Telegram Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=your_user
+WorkingDirectory=/opt/ping-monitor
+ExecStart=/usr/bin/python3 /opt/ping-monitor/ping_monitor.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
